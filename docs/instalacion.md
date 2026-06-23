@@ -37,3 +37,42 @@ El sistema requiere de configuraciones clave para interactuar de forma segura co
 2. Duplica el archivo y renómbralo exactamente como `.env`:
 ```bash
    cp .env.example .env
+
+---
+
+
+##🚀 4. Ejecución Local
+
+Sigue esta secuencia ordenada de comandos en tu terminal para inicializar las dependencias, construir las bases de datos y levantar la plataforma en modo desarrollo:
+
+# 1. Instalar la totalidad de las dependencias del proyecto
+npm install
+
+# 2. Ejecutar las migraciones pendientes para construir el esquema de la base de datos
+npm run db:migrate
+
+# 3. Insertar los datos base y de prueba (usuarios admin, cursos iniciales, etc.)
+npm run db:seed
+
+# 4. Levantar el servidor de desarrollo local con recarga en vivo (Hot-Reload)
+npm run dev
+
+---
+
+## ✅ 5. Verificación Inicial del Sistema
+Para comprobar de forma rápida y efectiva que todos los módulos y la infraestructura base de EduCampus LMS están operando correctamente tras la instalación, realiza las siguientes validaciones:
+
+Acceso Web: Abre tu navegador web e ingresa a la URL local http://localhost:3000. Deberías visualizar correctamente el tabulado de inicio de sesión o la interfaz de bienvenida de la plataforma sin registrar errores en la consola del navegador.
+
+Prueba del API (Health Check): Realiza una petición HTTP de tipo GET a la ruta de salud del sistema mediante tu terminal o navegador:
+
+Bash
+   curl http://localhost:3000/api/v1/health
+Respuesta esperada:
+
+JSON
+   {
+     "status": "up",
+     "database": "connected",
+     "timestamp": "2026-06-23T17:08:27Z"
+   }
