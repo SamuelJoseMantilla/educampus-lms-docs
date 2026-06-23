@@ -28,3 +28,12 @@ La plataforma utiliza un motor de base de datos relacional para garantizar la in
 * **Migraciones y Semillas:** No es necesario importar un volcado SQL manual. Los esquemas de tablas, índices y datos iniciales de prueba (seeds) se ejecutan de forma automatizada mediante scripts del ORM desde la consola.
 
 ---
+
+## 🔑 3. Variables de Entorno
+
+El sistema requiere de configuraciones clave para interactuar de forma segura con la base de datos, servicios de autenticación y claves criptográficas.
+
+1. En la raíz del proyecto, localiza el archivo de plantilla `.env.example`.
+2. Duplica el archivo y renómbralo exactamente como `.env`:
+```bash
+   cp .env.example .env
