@@ -4,9 +4,9 @@ Este documento recopila las directrices, estándares de calidad y metodologías 
 
 ---
 
-## Mensajes de commit
+## Buenas prácticas para mensajes de commit
 
-Los commits deben tener nombres claros para que el equipo pueda entender el historial del proyecto.
+Los mensajes de commit deben ser breves, claros y descriptivos. Deben permitir que el equipo comprenda qué se hizo y, cuando sea necesario, por qué se realizó el cambio.
 
 * **Sigue la Especificación Semántica:** Es obligatorio el uso de *Conventional Commits* (tipo(alcance): descripción). Nunca agrupes cambios no relacionados en un solo commit.
 * **Haz Commits Pequeños y Atómicos:** Un commit debe encargarse de resolver **una sola cosa**. Si estás desarrollando una vista y encuentras un error ortográfico en otra página, no mezcles ambos cambios; haz un commit para la característica y otro diferente para el ajuste de texto.
