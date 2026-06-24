@@ -9,3 +9,10 @@ Centralizar los procesos académicos de una institución educativa mediante una 
 ## Estado del proyecto
 
 Documentación inicial en construcción.
+
+## Reglas generales del proyecto
+
+1. Todo cambio debe realizarse en una rama independiente.
+2. Todo aporte debe ser revisado antes de integrarse.
+3. Los mensajes de commit deben ser claros y descriptivos.
+4. Los conflictos deben resolverse de forma consciente.
